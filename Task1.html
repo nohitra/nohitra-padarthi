@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+<h1>Image Slideshow Gallery</h1>
+
+<div class="gallery">
+    <div class="thumbnail-container">
+        <img src="C:/Users/Hi/Pictures/mypictures/23481A0560.jpg" alt="Image 1" class="thumbnail" onclick="openModal(0)">
+        <img src="C:/Users/Hi/Pictures/img 16.webp" alt="Image 2" class="thumbnail" onclick="openModal(1)">
+        <img src="C:/Users/Hi/Pictures/img 6.jpg" alt="Image 3" class="thumbnail" onclick="openModal(2)">
+        <img src="C:/Users/Hi/Pictures/img 4.jpg" alt="Image 4" class="thumbnail" onclick="openModal(3)">
+        <img src="C:/Users/Hi/Pictures/How AI is Changing Blog Writing and Why You Should Care_.jpeg" alt="Image 5" class="thumbnail" onclick="openModal(4)">
+        <img src="C:/Users/Hi/Pictures/1aa13529-214a-4883-bfea-a83d15b01588.jpeg" alt="Image 6" class="thumbnail" onclick="openModal(5)">
+        <img src="C:/Users/Hi/Pictures/img 2.jpg" alt="Image 7" class="thumbnail" onclick="openModal(6)">
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <img class="modal-content" id="modalImage">
+    <div id="caption" class="caption"></div>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<script src="task1.js"></script>
+</body>
+</html>
